@@ -2,7 +2,7 @@ import random
 from math import pow
 # we choose a random very large number q
 q = random.randint(pow(10, 20), pow(10, 50))
-
+plain_messages = ["first", "second", "third"]
 
 def gcd(a, b):
     if a < b:
@@ -77,7 +77,7 @@ class EncriptedMessageInfo:
 
 class Sender():
     def __init__(self) -> None:
-        self.messages = ["first", "second", "third"]
+        self.messages = plain_messages
         self.private_keys = []
         self.encripted_messages_info = []
     
